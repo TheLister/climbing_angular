@@ -1,0 +1,19 @@
+
+body {
+  padding-top: 56px;
+}
+
+.subtitle {
+  color: #FFFFFF !important;
+  font-size: 1.1rem;
+}
+
+.navbar-brand {
+  font-family:  Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.card {
+  /* margin: 10rem !important; */
+}
+
