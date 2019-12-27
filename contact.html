@@ -64,69 +64,67 @@
 
 
 <!-- Page Content -->
-<div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card mt-4">
-          <!-- <h2 class="card-title">About</h2> -->
-          <div class="card-header h2">
-            About
-          </div>
-          <img class="card-img-top img-fluid" src="./img/2-full.jpg" alt="">
-          <div class="card-body">
-            <p class="card-text">This is the official website for Refuge Bouldering: A Bouldering Guidebook to the Wichita Mountains. Check in for updates on the development process, open projects, and the 2020 release date.</p>
-          </div>
-        </div>
+<div class="container col-lg-8 ">
 
-      </div> <!-- /.col-lg-4 -->
-      <div class="col-lg-8">
-        <div class="card mt-4">
-            <!-- <h3 class="card-title">Video of the Week</h3> -->
-            <div class="card-header h2">
-              Video of the Week
+  <!-- <div class="col-lg-10"> -->
+
+    <form id="contact-form" method="post" action="contact.php" role="form">
+
+        <div class="messages"></div>
+    
+        <div class="controls">
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">Name *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="John" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="john.doe@gmail.com" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
             </div>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mi4_NpD1iqc" allowfullscreen></iframe>
-          </div>
-          <div class="card-body">
-            <p class="card-text">These four problems, along with six others, went up over the course of two days this October. "My Pompadour Fade" is part of the area's upper section which also houses my first problem in the area, "Cosmic Expansion". "Winner, Winner" is located on the Chicken Dinner boulder and feels quite similar to the Refuge classic "Steak Dinner" (Hence the play on name). "The Riley Shuffle" and "Riley's Roof" are both located in the main area, and named after my aging dog who just can't make the long hikes with me anymore. There is plenty of potential for new problems ranging from V5 to V10+ in the same area, and I'll be making several more trips out here this year.</p>
-          </div>
-        </div> 
-      </div> <!-- /.col-lg-8 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_subject">Subject *</label>
+                        <input id="form_subject" name="subject" class="form-control" required="required" data-error="Please provide a subject.">
+                            <option value=""></option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="10" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">
+                        <strong>*</strong> These fields are required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    </form>
 
-  </div> <!--top row -->
-
-  <div class="row"> <!--second row-->
-    <div class="card" > 
-        <div class="card-header">News</div>
-    <div class="card-deck">
-      <div class="card m-4">
-        <img src="./img/3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
-        </div>
-      </div>
-      <div class="card m-4">
-        <img src="./img/3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
-        </div>
-      </div>
-      <div class="card m-4">
-        <img src="./img/3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <a href="#" class="btn btn-primary">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div> <!--/deck-->
-  </div> <!--/row-->
+  <!-- </div>  -->
 
 </div><!-- /.container -->
 
